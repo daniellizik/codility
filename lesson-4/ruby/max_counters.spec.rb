@@ -4,6 +4,7 @@ require "test/unit"
 class Spec < Test::Unit::TestCase
 
   def test_solution
+    assert_equal solution(4, [2, 2, 2, 2]), [2, 6, 2, 2]
     assert_equal solution(5, [3, 4, 4, 6, 1, 4, 4]), [3, 2, 2, 4, 2]
     assert_equal solution(5, [3, 4, 4, 6, 1, 4, 4, 6]), [4, 4, 4, 4, 4]
     assert_equal solution(5, [3, 4, 4, 6, 1, 4, 4, 6, 6]), [4, 4, 4, 4, 4]
